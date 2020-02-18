@@ -1,0 +1,28 @@
+We have a text file with structured tree information in form of:
+   node_id|parent_id|node_name
+   node_id: numeric node id
+   parent_id: id of parent node
+Main task is to represent this tree with correct paddings for every level,
+level one - zero paddings, level two - one padding and so on.
+Try to write code as simple as possible.
+
+---------------------------------------------------------------------------
+Input data:
+see. data.txt in attachment
+---------------------------------------------------------------------------
+
+Output data:
+Electronics
+-MP3 player
+--iPod
+---Shuffle
+-TV
+Video
+Photo
+-SLR
+--DSLR
+---Nikon
+---Canon
+----20D
+
+
