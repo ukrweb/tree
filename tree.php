@@ -41,10 +41,10 @@ class Tree
      */
     public function buildTree(array $elements, int $parentId = 0, int $level = 0, string $tree = '') : string
     {
-        foreach ($elements as $category) {
-            if ($category['parentId'] == $parentId) {
-                $row = str_repeat("-", $level) . $category['name'] . PHP_EOL;
-                $tree .= $this->buildTree($elements, $category['id'], $level + 1, $row);
+        foreach ($elements as $element) {
+            if ($element['parentId'] == $parentId) {
+                $row = str_repeat("-", $level) . $element['name'] . PHP_EOL;
+                $tree .= $this->buildTree($elements, $element['id'], $level + 1, $row);
             }
         }
 
